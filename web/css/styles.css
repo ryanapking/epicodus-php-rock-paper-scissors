@@ -1,0 +1,22 @@
+small {
+    float: right;
+}
+
+.right {
+    text-align: right;
+}
+.center {
+    text-align: center;
+}
+
+.winner {
+    text-align: left;
+}
+
+.draw {
+    text-align: center;
+}
+
+.loser {
+    text-align: right;
+}

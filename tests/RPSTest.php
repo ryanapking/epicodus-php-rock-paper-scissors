@@ -20,7 +20,7 @@
             // Act
             $result = $test_RPS->declareWinner();
             // Assert
-            $this->assertEquals("Player 1 wins", $result);
+            $this->assertEquals("You win", $result);
         }
 
         function test_declareWinner_paperRock()
@@ -30,7 +30,7 @@
             // Act
             $result = $test_RPS->declareWinner();
             // Assert
-            $this->assertEquals("Player 1 wins", $result);
+            $this->assertEquals("You win", $result);
         }
 
         function test_declareWinner_paperScissors()
@@ -40,7 +40,7 @@
             // Act
             $result = $test_RPS->declareWinner();
             // Assert
-            $this->assertEquals("Player 2 wins", $result);
+            $this->assertEquals("You lose", $result);
         }
     }
  ?>

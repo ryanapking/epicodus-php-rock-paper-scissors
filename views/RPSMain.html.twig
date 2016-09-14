@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link href='/css/styles.css' type='text/css' rel='stylesheet'>
+        <title>Rock, Paper, Scissors</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Play Rock, Paper, Scissors!<small><a href='/clearHistory'>clear history</a></small></h1>
+            <div class='row'>
+                <div class='col col-sm-6'>
+                    <form method='post' action='/post'>
+                        <h4>Choose wisely:</h4>
+                        <!-- <button type='submit' name='player1Calls' value='Rock'>Rock!</button>
+                        <button type='submit' name='player1Calls' value='Paper'>Paper!</button>
+                        <button type='submit' name='player1Calls' value='Scissors'>Scissors!</button> -->
+                        <input type='image' name='player1Calls' value='Rock' src='/Rock.png'>
+                        <input type='image' name='player1Calls' value='Paper' src='/Paper.png'>
+                        <input type='image' name='player1Calls' value='Scissors' src='/Scissors.png'>
+                    </form>
+                </div>
+                <div class='col col-sm-6'>
+                    <h4>
+                        <div class='row'>
+                            <div class='col-xs-4'>
+                                Wins:
+                            </div>
+                            <div class='col-xs-4 center'>
+                                Draws:
+                            </div>
+                            <div class='col-xs-4 right'>
+                                Losses:
+                            </div>
+                        </div>
+                    </h4>
+                    <div>
+                        {% for game in games %}
+                            {% if game.getWinner == 'You win' %}
+                                <div class='winner'>
+                            {% elseif game.getWinner == 'Draw' %}
+                                <div class='draw'>
+                            {% else %}
+                                <div class='loser'>
+                            {% endif %}
+                                    <img src='{{ game.getPlayer1Calls }}.png' width='35px'>
+                                    vs.
+                                    <img src='{{ game.getPlayer2Calls }}.png' width='35px'>
+                                </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
