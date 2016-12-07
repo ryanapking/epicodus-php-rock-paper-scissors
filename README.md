@@ -8,7 +8,7 @@
 
 _User enters their selection, and the computer player randomly selects their choice. Winner is declared based on the typical RPS rules._
 
-* _Project can be viewed (here)[http://rps.ryanapking.com/]_
+* _Project can be viewed [here](http://rps.ryanapking.com/)_
 
 ## Setup/Installation Requirements
 
