@@ -8,6 +8,8 @@
 
 _User enters their selection, and the computer player randomly selects their choice. Winner is declared based on the typical RPS rules._
 
+* _Project can be viewed (here)[http://rps.ryanapking.com/]_
+
 ## Setup/Installation Requirements
 
 * _Clone this repository to your desktop_
@@ -33,7 +35,7 @@ _Spec 3: Paper beats rock._
 
 _Spec 4: Game is a draw if players call the same attack._
 * _Input: Player 1: Paper, Player 2: Paper_
-* _Output: Draw
+* _Output: Draw_
 
 ## Support and contact details
 
